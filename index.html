@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="utf-8">
@@ -48,6 +48,7 @@
             font-family: "Times New Roman", serif;
             font-size: 4.5rem;
             line-height: 5.625rem;
+            hyphens: auto;
         }
 
         h3 {
@@ -61,6 +62,12 @@
         
         .text-muted {
             color: darkslategray !important;
+        }
+
+        @media screen and (max-width: 375px) {
+            .ri-mobile-hide {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -87,7 +94,7 @@
                 </li>
             </ul>
 
-            <img src="./apple-touch-icon.png" class="img-fluid" alt="Ritter Invest" style="max-height: 2em;">
+            <img src="./apple-touch-icon.png" class="img-fluid ri-mobile-hide" alt="Ritter Invest" style="max-height: 2em;">
         </div>
     </nav>
 
